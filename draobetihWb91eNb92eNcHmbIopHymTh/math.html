@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Math</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<!--<script src = "js/bootstrap.js"></script>-->
+<script src="jquery.js"></script>
+<script src = "js/bootstrap.min.js"></script>
+<!--MATH AJAX FOR EQUATIONS -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+<!--FANCYBOX FOR CONVENIENT VIEWING-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" tyle="text/css" href="content.css">
+<style>
+      .MathJax_CHTML {
+      font-size: 12.5px !important;
+    }
+</style>
+</head>
+
+     <body style="background: #7D1B0E;">
+   
+     <div class="navbar navbar-inverse navbar-fixed-top">
+     <a href="#" class="navbar-brand" style="color: #DE2323;"><span class="glyphicon glyphicon-book"></span> Math</a>
+     <button class = "navbar-toggle" data-toggle = "collapse" data-target =".navHeaderCollapse">
+     <span class = "icon-bar"></span><span class="icon-bar"></span>
+     <span class = "icon-bar"></span>
+     <span class="icon-bar"></span>
+     </button>
+     <div class="collapse navbar-collapse navHeaderCollapse">
+     <ul class="nav navbar-nav navbar">
+     <li><a href="test_index.html">Main Content</a></li>
+     
+     <li class="dropdown">
+     <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Chemistry <b class="caret"></a></b>
+     <ul class="dropdown-menu"></li>
+     <li><a href="chm_lec.html" style="color: #2348DE;"><span class="glyphicon glyphicon-book"></span> Chem. Lec</a></li>
+     <li><a href="chm_lab.html"><span class="glyphicon glyphicon-tint"></span> Chem. Lab</a></li>
+     </li>
+     </ul>
+     <!-- REMOVED DUE TO UNCOMPLEXITY
+     <li class="dropdown">
+     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Biology <b class="caret"></b></a>
+     <ul class="dropdown-menu">
+     <li><a href="bio_lec.html"><span class="glyphicon glyphicon-book"></span> Bio. Lecture</a></li>
+     <li><a href="bio_lab.html"><span class="glyphicon glyphicon-leaf"></span> Bio. Laboratory</a></li>
+     </li>
+     </ul>-->
+     <li class="dropdown">
+     <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Physics <b class="caret"></b></a>
+     <ul class="dropdown-menu"></li>
+     <li><a href="phy_lec.html" style="color: #DEB887;"><span class="glyphicon glyphicon-book"></span> Phys. Lecture</a></li>
+     <li><a href="phy_lab.html" style="color: #24CB5C;"><span class="glyphicon glyphicon-wrench"></span> Phys. Laboratory</a></li>
+     </li>
+     </ul>
+     <li class="active"><a href="math.html">Math</a></li>
+     </ul>
+    
+     </div>
+     </div>
+     
+
+
+
+
+     <br>
+     <br>
+     <br>
+      <!--<center>
+      <img src="resources/sitechillout.gif" width="350" height="300">
+      <p style="color: #FFFFFF">"Chill out. The page is not yet finished."
+     </center>-->
+
+     
+     <div class="container">
+     	 <h4 style="color: white;">Introduction to Calculus (Lecture)</h4>
+      <h5 style="color: white;">Tap the desired week to toggle the data that you'll be viewing. Tap again to conceal.</h5>
+     <div class="panel-group" id="accordion">
+     <div class="panel panel-default">
+     <div class="panel-heading">
+      <h4 class="panel-title">
+     <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+      <b>Week 1 - Arithmetic Sequence, Arithmetic Series, Geometric Sequence <span class="glyphicon glyphicon-ok" style="color: green;"></span></b></a>
+      </h4></div>
+          <div id="collapse1" class="panel-collapse collapse">
+               
+               <div class="panel-body" id=""><center><b>Arithmetic Sequence (Equation)</b>
+                $$a_n=a_1+(n-1)~d$$ 
+                <hr>$$a_1:~is~the ~first~ term$$
+                $$n: ~is ~the ~number ~of ~terms$$
+                $$1: ~is~ just~ constant$$
+                $$d: ~is ~the ~common ~difference$$
+              </center><hr id=hrshadow>
+              <center><b>Arithmetic Series (Equation)</b>
+                $$S_n=\frac{n}{2}(a_1 + a_n)~~~~~~~~~~~~~~~~~~~(1)$$
+                $$S_n=\frac{n}{2}(2a_1+(n-1)~d)~~~~~~~(2)$$
+                <hr>$$a_n: is ~the~ n^{th} ~term$$
+              </center><hr id="hrshadow">
+              <center><b>Geometric Sequence (Equation)
+                $$a_n=a_1~r^{n-1}$$<hr>$$a_n: n^{th}~term~of~the~sequence$$
+              $$a_1: first~term~of~the~sequence$$
+            $$r: common~ratio$$</b></center>
+               </div>
+          </div>
+     </div>
+ </div>
+     
+     
+     <div class="panel-group" id="accordion">
+     <div class="panel panel-default">
+     <div class="panel-heading">
+      <h4 class="panel-title">
+     <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+      <b>Week 2 - Binomial Theorem, Analytical Solution of System Equations, System of Linear Equation<font color="red"> (Upcoming)</font></b></a>
+      </h4></div>
+          <div id="collapse21" class="panel-collapse collapse">
+               
+               <div class="panel-body" id="">
+
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+     
+      
+     <div class="panel-group" id="accordion">
+     <div class="panel panel-default">
+     <div class="panel-heading">
+      <h4 class="panel-title">
+     <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+      <b>Week 3 - Pythagorean Theorem, Trigonometry of Right Triangles, Trigonometric Functions of Angles, Trigonometric Identities<font color="red"> (Upcoming)</font></b></a>
+      </h4></div>
+          <div id="collapse31" class="panel-collapse collapse">
+               
+               <div class="panel-body" id="">Week 3 
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+                    <div class="panel-group" id="accordion">
+     <div class="panel panel-default">
+     <div class="panel-heading">
+      <h4 class="panel-title">
+     <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+      <b>Week 4 - Law of Sines and Cosines, Exponential and Logarithmic Functions, First Degree Equations<font color="red"> (Upcoming)</font></b></a>
+      </h4></div>
+          <div id="collapse41" class="panel-collapse collapse">
+               
+               <div class="panel-body" id="">Week 4 
+
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+                    <div class="panel-group" id="accordion">
+     <div class="panel panel-default">
+     <div class="panel-heading">
+      <h4 class="panel-title">
+     <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+      <b>Week 5 - Circles, Conic Sections<font color="red"> (Upcoming)</font></b></a>
+      </h4></div>
+          <div id="collapse51" class="panel-collapse collapse">
+               
+               <div class="panel-body" id="">Week 5 
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+                    <div class="panel-group" id="accordion">
+     <div class="panel panel-default">
+     <div class="panel-heading">
+      <h4 class="panel-title">
+     <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+      <b>Week 6 - Infinite Limit, Limits at Infinity, Discontinuity, Derivative, Differentation Formulas, Hyperbola<font color="red"> (Upcoming)</font></b></a>
+      </h4></div>
+          <div id="collapse51" class="panel-collapse collapse">
+               
+               <div class="panel-body" id="">Week 6
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+
+
+              
+     
+     
+     
+    
+     
+     </body>
+    <script>
+        $(document).ready(function(){
+        $('body').find('img[src$="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"]').parent().closest('a').closest('div').remove();
+        
+        });
+    </script>
+    <script>
+$(document).ready(function()
+{
+    $('img').bind('contextmenu', function(e){
+        return false;
+    }); 
+});
+</script>
+
+
+
+
+
+</html> 

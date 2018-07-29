@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>OTG Reviewer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<!--<script src = "js/bootstrap.js"></script>-->
+<script src="jquery.js"></script>
+<script src = "js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="main.css">
+
+</head>
+
+     <body style="background: #800000;">
+   
+     <div class="navbar navbar-inverse navbar-fixed-top">
+     <a href="#" class="navbar-brand" style="color: #FFFFFF;"><img src="resources/MUlogo.gif" class="logo" width="50" height="50"></a>
+     <button class = "navbar-toggle" data-toggle = "collapse" data-target =".navHeaderCollapse">
+     <span class = "icon-bar"></span><span class="icon-bar"></span>
+     <span class = "icon-bar"></span>
+     <span class="icon-bar"></span>
+     </button>
+     <div class="collapse navbar-collapse navHeaderCollapse">
+     <ul class="nav navbar-nav navbar">
+     <li class="active"><a href="#">Main Content</a></li>
+     <li class="dropdown">
+     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Chemistry <b class="caret"></a></b>
+     <ul class="dropdown-menu">
+     <li><a href="chm_lec.html" style="color: #2348DE;"><span class="glyphicon glyphicon-book"></span> Chem. Lec</a></li>
+     <li><a href="chm_lab.html"><span class="glyphicon glyphicon-tint"></span> Chem. Lab</a></li>
+     </li>
+     </ul>
+     <!-- REMOVED DUE TO UNCOMPLEXITY
+     <li class="dropdown">
+     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Biology <b class="caret"></b></a>
+     <ul class="dropdown-menu">
+     <li><a href="bio_lec.html"><span class="glyphicon glyphicon-book"></span> Bio. Lecture</a></li>
+     <li><a href="bio_lab.html"><span class="glyphicon glyphicon-leaf"></span> Bio. Laboratory</a></li>
+     </li>
+     </ul>-->
+     <li class="dropdown">
+     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Physics <b class="caret"></b></a>
+     <ul class="dropdown-menu">
+     <li><a href="phy_lec.html" style="color: #DEB887;"><span class="glyphicon glyphicon-book"></span> Phys. Lecture</a></li>
+     <li><a href="phy_lab.html" style="color: #24CB5C;"><span class="glyphicon glyphicon-wrench"></span> Phys. Laboratory</a></li>
+     </li>
+     </ul>
+     <li><a href="math.html">Math</a></li>
+     </ul>
+    
+     </div>
+     </div>
+
+
+
+    
+
+
+
+     <div class="navbar navbar-inverse navbar-fixed-bottom">
+     <div class="container"><p class="navbar-text navbar-left" align="center" style="color: #FFFFFF">Welcome Student. <span id="clockDisplay"
+      style="color: #FFF000"></span>
+
+ <script>
+function renderTime(){
+	var currentTime = new Date ();
+	var diem = "AM";
+	var h = currentTime.getHours();
+	var m = currentTime.getMinutes();
+	var s = currentTime.getSeconds();
+
+	if (h==0){
+		h=12;
+	}	else if (h > 12){
+		h = h -12;
+		diem = "PM"
+	}
+	if (h < 10){
+		h = "0" + h;
+	}
+	if (m < 10){
+		m = "0" + m;
+	}
+	if (s < 10){
+		s = "0" + s;
+}
+	var myClock = document.getElementById("clockDisplay");
+	myClock.textContent = h + ":" + m + ":" + s + " " + diem;
+	setTimeout("renderTime()",1000);
+}
+renderTime();
+</script>
+
+
+
+    	
+     </div>
+     </div>
+
+
+
+     <br>
+     <br>
+     <br>
+     <br>
+
+     <style>
+     #scrollable-panel{
+        position: relative;
+      height: 150px;
+   
+       
+      overflow-y: scroll;
+      width: 100%;
+      }
+      .new{
+        margin: -8px;
+      }
+     
+     </style>
+
+     <div class="container">
+        <h4 style="color: white;">Enhancement OTG Reviewer</h4>
+      <h5 style="color: white;"><i>Note: Use PC for the best reviewing experience. Otherwise, if some reading interruptions happened (especially for small screen phones), set your phone orientation to landscape mode.</i></h5>
+      <h6 style="color: white;"><i>Phone Users: Tap the menu bar at the top-right portion of your phone screen then select a subject to start reviewing.</i></h6>
+     <div class="panel-group">
+     	<div class="panel panel-default">
+     		<div class="panel-heading">Patchnotes</div>
+     		<div class="panel-body" id="scrollable-panel">
+     			<ul type="circle"><div class="new">
+     				<li>07/15/2018 - CHMLEC Week 1 Added <span class="glyphicon glyphicon-ok" style="color: green;"></span></li>
+     				<li>07/18-19/2018 - CHMLEC Week 2 Added <span class="glyphicon glyphicon-ok" style="color: green;"></span></li>
+     				<li>07/20/2018 - CHMLEC Week 3 Added <span class="glyphicon glyphicon-ok" style="color:green;"></span></li>
+     				<!--<li>07/20/2018 - <b>CHMLEC all weeks completed! (ready for viewing) GLHF.</b></li>-->
+                    <li>07/20/2018 - CHMLEC Week 4 and 5 (In Progress) <span class=" glyphicon glyphicon-tasks" style="color: red;"></span></li>
+     				<li>07/20/2018 - BIOLEC Week 1 (In Progress) <span class=" glyphicon glyphicon-tasks" style="color: red;"></span></li>
+                    <li>07/21/2018 - CHMLEC Week 4 and 5 (Finalization) <span class=" glyphicon glyphicon-tasks" style="color: blue;"></span></li>
+                    <li>07/21/2018 - Physics Lecture Week 1 and 2 Added <span class="glyphicon glyphicon-ok" style="color: green;"></span> </li>
+                    <li>07/21/2018 - Math and Physics Lab (In Progress) <span class=" glyphicon glyphicon-tasks" style="color: red;"></span></li>
+                    <li>07/28/2018 - Math Week 1 Added <span class="glyphicon glyphicon-ok" style="color: green;"></span></li>
+                    <li>??/??/2018 - </li>
+                    <li>??/??/2018 - </li>
+     			</ul>
+
+     		</div>
+     	</div>
+     </div>
+     <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">Changelogs</div>
+            <div class="panel-body" id="scrollable-panel">
+                <ul><div class="new">
+                    <li>07/10/2018 - Improvised navigation bar</span></li>
+                    <li>07/13/2018 - Color scheme added per subject in order to mitigate per subj. confusions</li>
+                    <li>07/18/2018 - Lab experiments page are taken under consideration</li>
+                    <li>07/19/2018 - Lab experiments page are validated. Soon to be released esp. CHMLAB due to early finals</li>
+                    <li>07/20/2018 - All the unfinished pages are temporarily locked with notices</li>
+                    <li>07/21/2018 - <b>Chem and Bio Laboratory Manuals/Experiments are now downloadable</b></li>
+                    <li>07/21/2018 - All pages are up although some are still in process</li>
+                    <li>07/28/2018 - Biology subject has been removed due to uncomplexity</li>
+                    <li>??/??/2018 - </li>
+                </ul>
+            </div>
+        </div>
+     </div>
+ </div>
+
+ <br>
+ <br>
+ <br>
+     
+   
+ 
+     
+    
+     
+     </body>
+     <script>
+         $(document).ready(function(){
+             $('body').find('img[src$="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"]').parent().closest('a').closest('div').remove();
+         });
+     </script>
+
+
+<script>
+$(document).ready(function()
+{
+    $('img').bind('contextmenu', function(e){
+        return false;
+    }); 
+});
+</script>
+
+</html> 

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Phys. Lec</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<!--<script src = "js/bootstrap.js"></script>-->
+<script src="jquery.js"></script>
+<script src = "js/bootstrap.min.js"></script>
+<!--MATH AJAX FOR EQUATIONS -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+<!--FANCYBOX FOR CONVENIENT VIEWING-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" tyle="text/css" href="content.css">
+<style>
+      .MathJax_CHTML {
+      font-size: 12.5px !important;
+    }
+</style>
+</head>
+
+     <body style="background: #493D26;">
+   
+     <div class="navbar navbar-inverse navbar-fixed-top">
+     <a href="#" class="navbar-brand" style="color: #DEB887;"><span class="glyphicon glyphicon-book"></span> Phys. Lec</a>
+     <button class = "navbar-toggle" data-toggle = "collapse" data-target =".navHeaderCollapse">
+     <span class = "icon-bar"></span><span class="icon-bar"></span>
+     <span class = "icon-bar"></span>
+     <span class="icon-bar"></span>
+     </button>
+     <div class="collapse navbar-collapse navHeaderCollapse">
+     <ul class="nav navbar-nav navbar">
+     <li><a href="test_index.html">Main Content</a></li>
+     
+     <li class="dropdown">
+     <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Chemistry <b class="caret"></a></b>
+     <ul class="dropdown-menu"></li>
+     <li><a href="chm_lec.html" style="color: #2348DE;"><span class="glyphicon glyphicon-book"></span> Chem. Lec</a></li>
+     <li><a href="chm_lab.html"><span class="glyphicon glyphicon-tint"></span> Chem. Lab</a></li>
+     </li>
+     </ul>
+      <!-- REMOVED DUE TO UNCOMPLEXITY
+     <li class="dropdown">
+     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Biology <b class="caret"></b></a>
+     <ul class="dropdown-menu">
+     <li><a href="bio_lec.html"><span class="glyphicon glyphicon-book"></span> Bio. Lecture</a></li>
+     <li><a href="bio_lab.html"><span class="glyphicon glyphicon-leaf"></span> Bio. Laboratory</a></li>
+     </li>
+     </ul>-->
+     <li class="dropdown">
+     <li class="active"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Physics <b class="caret"></b></a>
+     <ul class="dropdown-menu"></li>
+     <li class="active"><a href="phy_lec.html" style="color: #DEB887;"><span class="glyphicon glyphicon-book"></span> Phys. Lecture</a></li>
+     <li><a href="phy_lab.html" style="color: #24CB5C;"><span class="glyphicon glyphicon-wrench"></span> Phys. Laboratory</a></li>
+     </li>
+     </ul>
+     <li><a href="math.html">Math</a></li>
+     </ul>
+    
+     </div>
+     </div>
+
+
+
+
+
+
+     <br>
+     <br>
+     <br>
+
+     <!--<center>
+      <img src="resources/sitechillout.gif" width="350" height="300">
+      <p style="color: #FFFFFF">"Chill out. The page is not yet finished."
+     </center> -->
+
+      <div class="container">
+        <h4 style="color: white;">Introduction to Physics (Lecture)</h4>
+      <h5 style="color: white;">Tap the desired week to toggle the data that you'll be viewing. Tap again to conceal.</h5>
+     <div class="panel-group" id="accordion">
+     <div class="panel panel-default">
+     <div class="panel-heading">
+      <h4 class="panel-title">
+     <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+      <b>Week 1 - Kinematics: Motion along a Straight Line <span class="glyphicon glyphicon-ok" style="color: green;"></span></b></a>
+      </h4></div>
+          <div id="collapse1" class="panel-collapse collapse">
+               
+               <div class="panel-body" id="">
+               <center>
+                <b>Kinematic (Equations)<br></b>
+                    $$V_f = V_o+at~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~(1)$$
+                    $$V_f~^2 = V_o~^2+2a\Delta x~~~~~~~~~~~~~~~~~~~(2)$$
+                    $$X_f = X_o + V_o~t + \frac{1}{2}~at~^2~~~~~~~~~~(3)$$
+                  </center><hr>
+                  $$Position: X$$
+                  $$Displacement:\Delta X=X_f-X_o$$
+                  $$Velocity: V,V_f,V_o$$
+                  $$Time: t$$
+                  $$Acceleration: a$$
+
+                  <hr id="hrshadow">
+                     <center>
+                    <b>Free Fall (Equations)</b>
+                    $$V_f = V_o-gt~~~~~~~~~~~~~~~~~~~~~~~~~~~~(1)$$
+                    $$V_f~^2 = V_o~^2-2g\Delta y~~~~~~~~~~~~~~~~~(2)$$
+                    $$Y_f=Y_o+V_o~t-\frac{1}{2}~gt~^2~~~~~~~~~~(3)$$
+                  </center><hr><center>Constant Values$$g=32ft/s^2$$
+                    $$g=9.81m/s^2$$<hr id="hrshadow"></center>
+                    <center><b>Projectile Equations</b>
+                      $$V_x=V_o~cos \theta$$
+                       $$V_y=V_o~sin \theta$$
+                       $$Range =\frac{V_o~^2sin2\theta}{g}$$
+                       $$t_{flight}=2\left(\frac{V_osin\theta}{g}\right)$$
+                    </center>
+
+               </div>
+          </div>
+     </div>
+ </div>
+     
+     
+     <div class="panel-group" id="accordion">
+     <div class="panel panel-default">
+     <div class="panel-heading">
+      <h4 class="panel-title">
+     <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+      <b>Week 2 - Work, Energy and Power <span class="glyphicon glyphicon-ok" style="color: green;"></span></b></a>
+      </h4></div>
+          <div id="collapse2" class="panel-collapse collapse">
+               
+               <div class="panel-body" id=""><center><b>Work (Equations)</b>
+                $$W=fd$$
+                $$d=st$$
+                $$f=ma$$
+                $$(fcos\theta) - to~finalize~the~force~with~\theta value/given.$$
+                 $$fd=W_f$$
+                $$W_f = -μmgd$$
+                $$W_{total} = W_p + W_f$$
+               </center>
+               <hr><center>
+                $$Work (W) = Unit: Joule (J)$$
+                $$Force (f) = Unit: Newton(N)$$
+                $$Distance (d/h)$$
+                $$Speed (s)$$
+                $$Time (t)$$
+                $$Mass (m)$$
+                $$Acceleration (a)$$
+              </center>
+              <hr id="hrshadow"><center><b>Potential Energy (Equation)</b>
+                $$PE = mgh$$
+                <hr>$$Potential Energy (PE) = Unit: Joule (J)$$
+                $$Gravity(g) = 9.81$$
+                $$Distance(h/d)$$
+              </center>
+              <hr id="hrshadow"><center><b>Kinetic Energy (Equation)</b>
+                $$KE = fd=\frac{1}{2}mv_f^2-\frac{1}{2}mv_i^2$$
+                <hr>
+                $$Kinetic Energy (KE) = Unit: Joule(J)$$
+                $$f(final~velocity)$$
+                $$i(initial~velocity)$$
+              </center>
+             
+               
+               <hr id="hrshadow"><center><b>Power (Equation)</b>
+                $$P=FV$$<hr>$$Power (P) = Unit: Watt(W)/Horsepower(hp)$$ 
+                $$746watt=1hp$$
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+     
+      
+     <div class="panel-group" id="accordion">
+     <div class="panel panel-default">
+     <div class="panel-heading">
+      <h4 class="panel-title">
+     <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+      <b>Week 3 - Mechanical Waves and Sounds (No Discussions Occurred)<font color="red"> (Upcoming)</font></b></a>
+      </h4></div>
+          <div id="collapse31" class="panel-collapse collapse">
+               
+               <div class="panel-body" id="">
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+                    <div class="panel-group" id="accordion">
+     <div class="panel panel-default">
+     <div class="panel-heading">
+      <h4 class="panel-title">
+     <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+      <b>Week 4 - Temperature and Heat (No Discussions Occurred)<font color="red"> (Upcoming)</font></b></a>
+      </h4></div>
+          <div id="collapse41" class="panel-collapse collapse">
+               
+               <div class="panel-body" id="">
+
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+                    <div class="panel-group" id="accordion">
+     <div class="panel panel-default">
+     <div class="panel-heading">
+      <h4 class="panel-title">
+     <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+      <b>Week 5 - Thermodynamics, Thermal Expansion, Current, Resistance and Electromotive Force (Pending) <!--<span class="glyphicon glyphicon-ok" style="color:green;"></span>--></b></a>
+      </h4></div>
+          <div id="collapse5" class="panel-collapse collapse">
+               
+               <div class="panel-body" id=""><img src="resources/tp.gif" width="50" height="50">Under Processing..
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+
+                    <div class="panel-group" id="accordion">
+     <div class="panel panel-default">
+     <div class="panel-heading">
+      <h4 class="panel-title">
+     <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+      <b>Week 6 - Light as an Electromagnetic Wave <font color="red">(Upcoming)</font></b></a>
+      </h4></div>
+          <div id="collapse61" class="panel-collapse collapse">
+               
+               <div class="panel-body" id="">Law of Reflection<hr>Law of Refraction<hr>
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+
+
+        
+     
+    
+     
+     </body>
+        <script>
+            $(document).ready(function(){
+               $('body').find('img[src$="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"]').parent().closest('a').closest('div').remove(); 
+            });
+        </script>
+        <script>
+$(document).ready(function()
+{
+    $('img').bind('contextmenu', function(e){
+        return false;
+    }); 
+});
+</script>
+
+
+
+
+</html> 

@@ -1,0 +1,14 @@
+.navbar {
+    min-height: 53px;
+}
+ul.navbar-nav > li > a {
+    line-height: 29px;
+}
+
+img.logo {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    width: 35px;
+    height: 32.5px;
+
+}
